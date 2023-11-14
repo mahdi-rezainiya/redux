@@ -4,14 +4,10 @@ import { counterSlice } from '../../redux/counterSlice';
 
 export default function UpBox3() {
 
-    const counter = useSelector(state => state.counter.value)
-
-    const dispatch = useDispatch()
+    const counter = useSelector(state => state.counter.value);
+    const dispatch = useDispatch();
 
     console.log(counter);
-
-
-
 
     return (
     <div className='bg-light p-4'>
@@ -21,12 +17,11 @@ export default function UpBox3() {
 
         <button onClick={() => dispatch(counterSlice.actions.decrement())}>decrement</button>
 
-        <button onClick={() => dispatch(counterSlice.actions.incrementByAmount(2))}>incrementByAmount</button>
+        <button onClick={() => dispatch(counterSlice.actions.incrementByAmount(4))}>incrementByAmount</button>
 
         <button onClick={() => dispatch(counterSlice.actions.decrementByAmount(4))}>decrementByAmount</button>
 
         <br />
-
 
         <p>counter : {counter}</p>
     </div>

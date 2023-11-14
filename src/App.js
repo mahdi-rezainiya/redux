@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-
 import './App.css';
 import DownBox1 from './components/downBox/DownBox1';
 import UpBox1 from './components/upBox/UpBox1';
