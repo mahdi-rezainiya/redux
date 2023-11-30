@@ -1,5 +1,4 @@
-const { createSlice } = require("@reduxjs/toolkit");
-
+import { createSlice } from '@reduxjs/toolkit';
 
 export const userSlice = createSlice({
     name : "user" ,
@@ -7,16 +6,6 @@ export const userSlice = createSlice({
         name : "ali",
         children : ['mari' , 'mamad']
     },
-    // reducers : {
-    //     addChildren : (state , action) => {
-    //         if(state.children){
-    //         }
-    //         else{
-    //             state.children = [...state.children , ...action.payload]
-    //         }
-    //     }
-    // }
-
     reducers: {
         addChildren: (state , action) => {
             if (state.children) {
